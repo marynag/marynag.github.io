@@ -175,3 +175,16 @@ btn2.addEventListener('click', function(){
 })
 
 
+$( '.additinal_btn').hover(
+    function() {
+      console.log('12')
+      document.querySelector('.add_info').classList.remove('none')
+    },
+    function() {
+        document.querySelector('.add_info').classList.add('none')
+      }
+  );
+
+  
+
+
