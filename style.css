@@ -9,18 +9,17 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endCo
     display: grid;
     justify-items: space-around;
     grid-template-columns: 1fr 1fr;
-    gap: 5vw;       
+    gap: 5vw; 
+    justify-items: center;   
+    justify-content: center;   
 }
 .aparat{
-    justify-self: center;
     grid-column: 1;
-    width: 30vw;
-    margin-top: 7vw;    
+    width: 30vw;   
 }
+
 .upravlinnia{
-    margin-top: 7vw;
-    width: 30vw;
-    justify-self: center;
+    width: 30vw;    
     grid-column: 2;
 }
 
@@ -29,7 +28,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endCo
     width: 30vw;        
     display: flex;
     flex-direction: column;    
-    justify-content: center;    
+    /*justify-content: center;*/    
     gap: 1vw;
 }
 
@@ -68,6 +67,7 @@ input{
 
 #btn:hover, #btn2:hover{
     background-color: rgba(255, 255, 255, 0.226);
+    color: rgb(44, 44, 44);
 }
 #btn:active, #btn2:active{
     background-color: rgba(148,187,233,1);
@@ -75,10 +75,13 @@ input{
 
 @media screen and (min-width: 250px) and (max-width:1350px){
     body{                  
-        grid-template-rows:  1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15vw;
     }
     .aparat{
-        margin-top: 17vw;
+        margin-top: 7vw;
         width: 80vw;  
         grid-row: 1;    
         grid-column: 1/3;     
@@ -120,7 +123,6 @@ input{
     }
 
     h1{
-        margin-top: 2vw;
         font-size: 4vw;
     }
 
@@ -152,10 +154,12 @@ h1{
 }
 
 .additional{
+    top: 0%;
     position: absolute;
     grid-row: 1;
     grid-column: 1/3;
-    width:100%
+    width:100%;
+    padding: 1.5vw;
 }
 
 .additinal_btn{
@@ -165,5 +169,4 @@ h1{
     border: none;
     border-radius: 10px;
     color:rgb(255, 255, 255)
-    
 }
